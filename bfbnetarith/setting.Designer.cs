@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.rdb10 = new System.Windows.Forms.RadioButton();
             this.rdb20 = new System.Windows.Forms.RadioButton();
+            this.rdb10 = new System.Windows.Forms.RadioButton();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.chkplus = new System.Windows.Forms.CheckBox();
-            this.chkminus = new System.Windows.Forms.CheckBox();
-            this.chkMulti = new System.Windows.Forms.CheckBox();
             this.chkDivide = new System.Windows.Forms.CheckBox();
+            this.chkMulti = new System.Windows.Forms.CheckBox();
+            this.chkminus = new System.Windows.Forms.CheckBox();
+            this.chkplus = new System.Windows.Forms.CheckBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.cmbType = new System.Windows.Forms.ComboBox();
             this.btnGenerate = new System.Windows.Forms.Button();
@@ -56,17 +56,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "题目难度";
             // 
-            // rdb10
-            // 
-            this.rdb10.AutoSize = true;
-            this.rdb10.Location = new System.Drawing.Point(74, 24);
-            this.rdb10.Name = "rdb10";
-            this.rdb10.Size = new System.Drawing.Size(74, 19);
-            this.rdb10.TabIndex = 0;
-            this.rdb10.TabStop = true;
-            this.rdb10.Text = "10以内";
-            this.rdb10.UseVisualStyleBackColor = true;
-            // 
             // rdb20
             // 
             this.rdb20.AutoSize = true;
@@ -77,6 +66,17 @@
             this.rdb20.TabStop = true;
             this.rdb20.Text = "20以内";
             this.rdb20.UseVisualStyleBackColor = true;
+            // 
+            // rdb10
+            // 
+            this.rdb10.AutoSize = true;
+            this.rdb10.Location = new System.Drawing.Point(74, 24);
+            this.rdb10.Name = "rdb10";
+            this.rdb10.Size = new System.Drawing.Size(74, 19);
+            this.rdb10.TabIndex = 0;
+            this.rdb10.TabStop = true;
+            this.rdb10.Text = "10以内";
+            this.rdb10.UseVisualStyleBackColor = true;
             // 
             // groupBox2
             // 
@@ -92,25 +92,15 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "运算符";
             // 
-            // chkplus
+            // chkDivide
             // 
-            this.chkplus.AutoSize = true;
-            this.chkplus.Location = new System.Drawing.Point(32, 30);
-            this.chkplus.Name = "chkplus";
-            this.chkplus.Size = new System.Drawing.Size(37, 19);
-            this.chkplus.TabIndex = 0;
-            this.chkplus.Text = "+";
-            this.chkplus.UseVisualStyleBackColor = true;
-            // 
-            // chkminus
-            // 
-            this.chkminus.AutoSize = true;
-            this.chkminus.Location = new System.Drawing.Point(139, 30);
-            this.chkminus.Name = "chkminus";
-            this.chkminus.Size = new System.Drawing.Size(37, 19);
-            this.chkminus.TabIndex = 1;
-            this.chkminus.Text = "-";
-            this.chkminus.UseVisualStyleBackColor = true;
+            this.chkDivide.AutoSize = true;
+            this.chkDivide.Location = new System.Drawing.Point(360, 30);
+            this.chkDivide.Name = "chkDivide";
+            this.chkDivide.Size = new System.Drawing.Size(37, 19);
+            this.chkDivide.TabIndex = 3;
+            this.chkDivide.Text = "/";
+            this.chkDivide.UseVisualStyleBackColor = true;
             // 
             // chkMulti
             // 
@@ -122,15 +112,25 @@
             this.chkMulti.Text = "×";
             this.chkMulti.UseVisualStyleBackColor = true;
             // 
-            // chkDivide
+            // chkminus
             // 
-            this.chkDivide.AutoSize = true;
-            this.chkDivide.Location = new System.Drawing.Point(360, 30);
-            this.chkDivide.Name = "chkDivide";
-            this.chkDivide.Size = new System.Drawing.Size(37, 19);
-            this.chkDivide.TabIndex = 3;
-            this.chkDivide.Text = "/";
-            this.chkDivide.UseVisualStyleBackColor = true;
+            this.chkminus.AutoSize = true;
+            this.chkminus.Location = new System.Drawing.Point(139, 30);
+            this.chkminus.Name = "chkminus";
+            this.chkminus.Size = new System.Drawing.Size(37, 19);
+            this.chkminus.TabIndex = 1;
+            this.chkminus.Text = "-";
+            this.chkminus.UseVisualStyleBackColor = true;
+            // 
+            // chkplus
+            // 
+            this.chkplus.AutoSize = true;
+            this.chkplus.Location = new System.Drawing.Point(32, 30);
+            this.chkplus.Name = "chkplus";
+            this.chkplus.Size = new System.Drawing.Size(37, 19);
+            this.chkplus.TabIndex = 0;
+            this.chkplus.Text = "+";
+            this.chkplus.UseVisualStyleBackColor = true;
             // 
             // groupBox3
             // 
@@ -171,7 +171,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(421, 297);
+            this.ClientSize = new System.Drawing.Size(421, 288);
             this.Controls.Add(this.btnGenerate);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);

@@ -28,47 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnGenerate = new System.Windows.Forms.Button();
-            this.btnExport = new System.Windows.Forms.Button();
             this.pnlDock = new System.Windows.Forms.Panel();
             this.tableDock = new System.Windows.Forms.TableLayoutPanel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.menu1 = new System.Windows.Forms.MenuStrip();
+            this.menu1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.RegeneratgeToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.ExportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pnlDock.SuspendLayout();
-            this.tableDock.SuspendLayout();
+            this.menu1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // btnGenerate
-            // 
-            this.btnGenerate.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btnGenerate.Location = new System.Drawing.Point(5, 3);
-            this.btnGenerate.Name = "btnGenerate";
-            this.btnGenerate.Padding = new System.Windows.Forms.Padding(10);
-            this.btnGenerate.Size = new System.Drawing.Size(137, 55);
-            this.btnGenerate.TabIndex = 0;
-            this.btnGenerate.Text = "重新生成";
-            this.btnGenerate.UseVisualStyleBackColor = true;
-            this.btnGenerate.Click += new System.EventHandler(this.btnGenerate_Click);
-            // 
-            // btnExport
-            // 
-            this.btnExport.Location = new System.Drawing.Point(158, 3);
-            this.btnExport.Name = "btnExport";
-            this.btnExport.Padding = new System.Windows.Forms.Padding(10);
-            this.btnExport.Size = new System.Drawing.Size(137, 55);
-            this.btnExport.TabIndex = 1;
-            this.btnExport.Text = "导出pdf";
-            this.btnExport.UseVisualStyleBackColor = true;
-            this.btnExport.Click += new System.EventHandler(this.btnExport_Click);
             // 
             // pnlDock
             // 
-            this.pnlDock.Controls.Add(this.btnExport);
-            this.pnlDock.Controls.Add(this.btnGenerate);
             this.pnlDock.Controls.Add(this.tableDock);
             this.pnlDock.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlDock.Location = new System.Drawing.Point(0, 0);
+            this.pnlDock.Location = new System.Drawing.Point(0, 28);
             this.pnlDock.Name = "pnlDock";
-            this.pnlDock.Size = new System.Drawing.Size(1006, 721);
+            this.pnlDock.Size = new System.Drawing.Size(1190, 620);
             this.pnlDock.TabIndex = 2;
             // 
             // tableDock
@@ -79,7 +55,6 @@
             this.tableDock.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableDock.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableDock.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableDock.Controls.Add(this.label1, 3, 24);
             this.tableDock.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableDock.Location = new System.Drawing.Point(0, 0);
             this.tableDock.Name = "tableDock";
@@ -109,43 +84,67 @@
             this.tableDock.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
             this.tableDock.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
             this.tableDock.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.tableDock.Size = new System.Drawing.Size(1006, 721);
+            this.tableDock.Size = new System.Drawing.Size(1190, 620);
             this.tableDock.TabIndex = 2;
             // 
-            // label1
+            // menu1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(741, 960);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(55, 15);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "label1";
+            this.menu1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.menu1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menu1ToolStripMenuItem});
+            this.menu1.Location = new System.Drawing.Point(0, 0);
+            this.menu1.Name = "menu1";
+            this.menu1.Size = new System.Drawing.Size(1190, 28);
+            this.menu1.TabIndex = 2;
+            this.menu1.Text = "菜单";
+            // 
+            // menu1ToolStripMenuItem
+            // 
+            this.menu1ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.RegeneratgeToolStripMenuItem1,
+            this.ExportToolStripMenuItem});
+            this.menu1ToolStripMenuItem.Name = "menu1ToolStripMenuItem";
+            this.menu1ToolStripMenuItem.Size = new System.Drawing.Size(51, 24);
+            this.menu1ToolStripMenuItem.Text = "菜单";
+            // 
+            // RegeneratgeToolStripMenuItem1
+            // 
+            this.RegeneratgeToolStripMenuItem1.Name = "RegeneratgeToolStripMenuItem1";
+            this.RegeneratgeToolStripMenuItem1.Size = new System.Drawing.Size(181, 26);
+            this.RegeneratgeToolStripMenuItem1.Text = "重新生成";
+            this.RegeneratgeToolStripMenuItem1.Click += new System.EventHandler(this.RegeneratgeToolStripMenuItem1_Click);
+            // 
+            // ExportToolStripMenuItem
+            // 
+            this.ExportToolStripMenuItem.Name = "ExportToolStripMenuItem";
+            this.ExportToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.ExportToolStripMenuItem.Text = "导出";
+            this.ExportToolStripMenuItem.Click += new System.EventHandler(this.ExportToolStripMenuItem_Click);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1006, 721);
+            this.ClientSize = new System.Drawing.Size(1190, 648);
             this.Controls.Add(this.pnlDock);
+            this.Controls.Add(this.menu1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.MaximizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "百分百学校口算题";
             this.pnlDock.ResumeLayout(false);
-            this.tableDock.ResumeLayout(false);
-            this.tableDock.PerformLayout();
+            this.menu1.ResumeLayout(false);
+            this.menu1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnGenerate;
-        private System.Windows.Forms.Button btnExport;
         private System.Windows.Forms.Panel pnlDock;
         private System.Windows.Forms.TableLayoutPanel tableDock;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.MenuStrip menu1;
+        private System.Windows.Forms.ToolStripMenuItem menu1ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem RegeneratgeToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem ExportToolStripMenuItem;
     }
 }
 
